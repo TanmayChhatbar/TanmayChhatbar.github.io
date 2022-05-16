@@ -91,25 +91,25 @@ a:active {
 .s31{
     background: url('../media/boeing_p3.gif');
     background-size: contain;
-    background-position: 250%;
+    background-position: 180%;
     background-repeat: no-repeat;
 }
 .s32{
     background: url('../media/sae.gif');
-    background-size: 120%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: -50%;
+    background-position: 180%;
 }
 .s33{
     background: url('../media/speedy_g.gif');
     background-size: contain;
-    background-position: 250%;
+    background-position: 180%;
     background-repeat: no-repeat;
 }
 .s34{
     background: url('../media/foomie.gif');
     background-size: contain;
-    background-position: 250%;
+    background-position: 180%;
     background-repeat: no-repeat;
 }
 .s51{
