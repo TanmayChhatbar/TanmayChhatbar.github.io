@@ -1,0 +1,142 @@
+body {
+    background-color: #000;
+    font-family:'Calibri';
+}
+
+iframe {
+    border:2px solid #333;
+    width: 30%;
+    /* height: 30%; */
+    aspect-ratio: 16/9;
+    margin: 10px;
+}
+
+h1 {
+    padding-left: 2%;
+    text-align: left;
+    color: white;
+}
+h3 {
+    padding-left: 2%;
+    text-align: left;
+    color: grey;
+}
+
+p { 
+    text-align: left;
+    padding-left: 2%;
+    color: white;
+}
+
+hr {
+    height:1px;
+    color: black;
+}
+
+a:link {
+    color: darkgray;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.blackline {
+    color: black;
+}
+
+
+.s11{
+    background: url('../media/datalogger2.2_fr.gif');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 150%;
+}
+.s12{
+    background: url('../media/2jz_colored_smaller.gif');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+.s13{
+    background: url('../media/tb3.gif');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 300%;
+}
+.s14{
+    background: url('../media/blender_logo.png');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 75%;
+}
+.s21{
+    background: url('../media/plotter.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.s31{
+    background: url('../media/boeing_p3.gif');
+    background-size: contain;
+    background-position: 250%;
+    background-repeat: no-repeat;
+}
+.s32{
+    background: url('../media/sae.gif');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -50%;
+}
+.s33{
+    background: url('../media/speedy_g.gif');
+    background-size: contain;
+    background-position: 250%;
+    background-repeat: no-repeat;
+}
+.s34{
+    background: url('../media/foomie.gif');
+    background-size: contain;
+    background-position: 250%;
+    background-repeat: no-repeat;
+}
+.s51{
+    background: url('../media/2jz\ colored.gif');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+.section{
+    z-index: 0;
+    padding-top: 0px !important;
+    margin-top: 0% !important;
+    height: 100% !important;
+}
+
+#fullpage{
+    z-index: 0;
+}
+
+span {
+    background: white !important;
+}
+.fp-slidesNav.fp-bottom {
+    text-align: center;
+}
+ul, li {
+    color: grey;
+    margin-left: 10px;
+}
