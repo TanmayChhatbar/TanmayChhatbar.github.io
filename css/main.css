@@ -4,17 +4,37 @@ body {
 }
 
 iframe {
-    border:2px solid #333;
+    border:2px solid #418FDD;
     width: 30%;
-    /* height: 30%; */
     aspect-ratio: 16/9;
     margin: 10px;
+}
+#infoMenu{
+    position: absolute;
+	bottom: 2%;
+    right: 0%;
+	color: #333;
+	position: fixed;
+	z-index: 70;
+	margin: 0;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 2em 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:none;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
 }
 
 h1 {
     padding-left: 2%;
     text-align: left;
-    color: white;
+    color: #418FDD;
 }
 h3 {
     padding-left: 2%;
@@ -27,7 +47,14 @@ p {
     padding-left: 2%;
     color: white;
 }
-
+.info {
+    text-align: left;
+    padding-left: 2%;
+    color: white;
+    width: 40%;
+    text-align: justify;
+    line-height: 1.25em;
+}
 hr {
     height:1px;
     color: black;
@@ -65,22 +92,16 @@ a:active {
     background-position: 150%;
 }
 .s12{
-    background: url('../media/2jz_colored_smaller.gif');
+    background: url('../media/2jz_colored_s_better.gif');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 80%;
 }
 .s13{
-    background: url('../media/tb3.gif');
+    background: url('../media/tb3_rev.gif');
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position: 300%;
-}
-.s14{
-    background: url('../media/blender_logo.png');
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 75%;
+    background-position: 250%;
 }
 .s21{
     background: url('../media/plotter.gif');
@@ -88,29 +109,53 @@ a:active {
     background-repeat: no-repeat;
     background-position: 100%;
 }
+.s22{
+    background: url('../media/smartwatch.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.s23{
+    background: url('../media/blender_logo.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
 .s31{
     background: url('../media/boeing_p3.gif');
-    background-size: contain;
-    background-position: 180%;
+    background-size: 90%;
+    background-position: 250%;
     background-repeat: no-repeat;
 }
 .s32{
     background: url('../media/sae.gif');
-    background-size: contain;
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: 180%;
+    background-position: 250%;
 }
 .s33{
     background: url('../media/speedy_g.gif');
-    background-size: contain;
-    background-position: 180%;
+    background-size: 90%;
+    background-position: 250%;
     background-repeat: no-repeat;
 }
 .s34{
     background: url('../media/foomie.gif');
-    background-size: contain;
-    background-position: 180%;
+    background-size: 90%;
+    background-position: 250%;
     background-repeat: no-repeat;
+}
+.s35{
+    background: url('../media/ft.gif');
+    background-size: 90%;
+    background-position: 250%;
+    background-repeat: no-repeat;
+}
+.s41{
+    background: url('../media/automotive.gif');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70%;
 }
 .s51{
     background: url('../media/2jz\ colored.gif');
@@ -128,15 +173,22 @@ a:active {
 
 #fullpage{
     z-index: 0;
+    height: 100%;
+    position: relative;
 }
 
 span {
-    background: white !important;
+    background: #418FDD !important;
 }
 .fp-slidesNav.fp-bottom {
     text-align: center;
+    /* size: 100%; */
 }
-ul, li {
-    color: grey;
+.fp-tooltip.fp-right {
+    /* color: #418FDD !important; */
+    color: white !important;
+}
+.feat {
+    color: lightgrey;
     margin-left: 10px;
 }
