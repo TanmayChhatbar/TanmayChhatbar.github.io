@@ -24,7 +24,7 @@ datas[0].append([ttl, dt, lns, info])
 
 ttl = "Autonomous Robot"
 dt = "Clemson University - International Center of Automotive Research"
-lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
+lns = ["https://www.youtube.com/embed/YXchdEtqzsE",""]
 info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
 \t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
 \t\t\t\t\t<br><br>The first video goes over the final demonstration. The second summarizes the control logic we introduced."""
