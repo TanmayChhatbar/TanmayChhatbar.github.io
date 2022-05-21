@@ -9,11 +9,12 @@ iframe {
     aspect-ratio: 16/9;
     margin: 10px;
 }
+
+/* links list */
 #infoMenu{
     position: absolute;
 	bottom: 2%;
     right: 0%;
-	color: #333;
 	position: fixed;
 	z-index: 70;
 	margin: 0;
@@ -30,23 +31,19 @@ iframe {
 	display:inline-block;
 	position:relative;
 }
-
+/* project name */
 h1 {
     padding-left: 2%;
     text-align: left;
     color: #418FDD;
 }
+/* project description */
 h3 {
     padding-left: 2%;
     text-align: left;
     color: grey;
 }
-
-p { 
-    text-align: left;
-    padding-left: 2%;
-    color: white;
-}
+/* project details */
 .info {
     text-align: left;
     padding-left: 2%;
@@ -55,11 +52,13 @@ p {
     text-align: justify;
     line-height: 1.25em;
 }
-hr {
-    height:1px;
-    color: black;
+p { 
+    text-align: left;
+    padding-left: 2%;
+    color: white;
 }
 
+/* links */
 a:link {
     color: darkgray;
     background-color: transparent;
@@ -80,11 +79,8 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
-.blackline {
-    color: black;
-}
 
-
+/* backgrounds */
 .s11{
     background: url('../media/datalogger2.2_fr.gif');
     background-size: 80%;
@@ -163,7 +159,6 @@ a:active {
     background-repeat: no-repeat;
     background-position: 80%;
 }
-
 .section{
     z-index: 0;
     padding-top: 0px !important;
@@ -171,21 +166,19 @@ a:active {
     height: 100% !important;
 }
 
+/* fullpage utils */
 #fullpage{
     z-index: 0;
     height: 100%;
     position: relative;
 }
-
 span {
     background: #418FDD !important;
 }
 .fp-slidesNav.fp-bottom {
     text-align: center;
-    /* size: 100%; */
 }
 .fp-tooltip.fp-right {
-    /* color: #418FDD !important; */
     color: white !important;
 }
 .feat {
