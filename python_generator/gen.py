@@ -12,7 +12,7 @@ from helpers import *
 # page 1
 ttl = "Car Datalogger"
 dt = "Data collection during AutoX events"
-lns = []
+lns = [""]
 info = """As a challenge, I engineered a datalogger for my car to collect inertial and GPS data while participating in AutoX events.<br>The result was this ESP32-based device, for which more information can be found on <a style="color:grey" href="https://github.com/TanmayChhatbar/car_datalogger" target="_blank"><u>GitHub</u></a>.<br><br><u>TTGO TS 1.4</u> ESP32-based board, with built-in <u>MPU9250 IMU</u> and a microSD card reader, was used.<br><u>Adafruit Ultimate GPS</u> module is used to get GPS data.<br>Inertial data is collected at around 300Hz, GPS data is collected at 5Hz."""
 datas[0].append([ttl, dt, lns, info])
 
@@ -39,7 +39,7 @@ datas.append([[ttl, dt, lns, info]])
 
 ttl = "DIY Smartwatch"
 dt = "Designed, manufactured and programmed by self"
-lns = []
+lns = [""]
 info = """Expenditure on education and improvement is okay, buying frivolous objects is not.<br>I wanted a smartwatch.<br>There's only one solution. <a style="color:grey" href="https://github.com/TanmayChhatbar/esp32_smartwatch" target="_blank"><u>DIY</u></a><br><br>The watch is capable of connecting to WiFi to <u>fetch time</u>, as well as keeping count of the number of <u>steps</u> the user walks daily."""
 datas[-1].append([ttl, dt, lns, info])
 
@@ -59,13 +59,13 @@ datas.append([[ttl, dt, lns, info]])
 
 ttl = "SAE Aero Design East 2019"
 dt = "7th* in Mission Performance"
-lns = []
+lns = [""]
 info = "SAE Aero Design East, a competition held in Fort Worth, Texas, was an international-level challenge taken up by <u>6 students</u> from our university.<br>An aircraft with a 12ft wingspan, weighing less than 7.5kg was designed and manufactured to lift <u>17.5kg of additional payload</u>, including 50-odd tennis balls, and steel plates.<br><br>The aircraft performed well through heavy crosswinds for a first-year team to bag <u>7th place</u> in Mission Performance."
 datas[-1].append([ttl, dt, lns, info])
 
 ttl = "Speedy G"
 dt = "\"I am Speed!\", said the Little Bird"
-lns = []
+lns = [""]
 info = "As a petrolhead, it is my passion to make things go fast.<br>This little plane, with a tiny 0.6m wingspan, was designed to be capable of flying safely at <u>160+kph</u>.<br>It was designed entirely by a group of 2 people, with aerodynamic efficiency and lightweightness, the main goals."
 datas[-1].append([ttl, dt, lns, info])
 
@@ -85,7 +85,7 @@ datas[-1].append([ttl, dt, lns, info])
 ttl = "Improvements in the Factory"
 dt = "Stagnation isn't good for mind or business"
 info = "I've designed and manufactured multiple automation solutions for use in a factory.<br>These include automatic <u>bottle fillers</u> for packaging soaps and detergents, and miscellaneous devices for streamlining workflow in processing of potato starch."
-lns = []
+lns = [""]
 datas.append([[ttl, dt, lns, info]])
 
 # page 5

@@ -79,7 +79,9 @@ def fullpage_div(div_i, data):
                 <p>
 """
         for link in links:
-            st = st + f"""                    <iframe src={link}></iframe>
+            if link == "":
+                link = "comingsoon.html"
+            st = st + f"""                    <iframe src="{link}"></iframe>
 """     
         if len(links) > 0:
             st = st + """                </p>
