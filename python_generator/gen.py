@@ -70,7 +70,7 @@ datas[-1].append([ttl, dt, lns, info])
 ttl = "Speedy G"
 dt = "\"I am Speed!\", said the Little Bird"
 lns = ["https://www.youtube.com/embed/T2X-0we-XOU"]
-info = "As a petrolhead, it is my passion to make things go fast.<br>This little plane, with a tiny 0.6m wingspan, was designed to be capable of flying safely at <u>160+kph</u>.<br>It was designed entirely by a group of 2 people, with aerodynamic efficiency and lightweightness, the main goals."
+info = "Who doesn't like fast vehicles? Named after the iconic Looney Tunes character, Speedy G is a tiny 600mm RC plane that we designed to use a 1300mAh 3S battery powering a 2207 T-Motor drone motor through a 35A ESC, spinning a 2-blade 7x4 prop.<br>We've measured doing over 160kph, around 100mph.<br>The design is almost entirely foamboard. The wings have no central spar. Instead, it is a stressed skin design. The front of the fuselage needed to be hollow for access to the battery, and is balsa. The motor mounts are 3D printed out of ABS."
 datas[-1].append([ttl, dt, lns, info])
 
 ttl = "The adventures of foomie"
