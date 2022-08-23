@@ -24,10 +24,14 @@ datas[0].append([ttl, dt, lns, info])
 
 ttl = "Autonomous Robot"
 dt = "Clemson University - International Center of Automotive Research"
-lns = ["https://www.youtube.com/embed/YXchdEtqzsE",""]
+# lns = ["https://www.youtube.com/embed/YXchdEtqzsE",""]
+lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
+# info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
+# \t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
+# \t\t\t\t\t<br><br>The first video goes over the final demonstration. The second summarizes the control logic we introduced."""
 info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
 \t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
-\t\t\t\t\t<br><br>The first video goes over the final demonstration. The second summarizes the control logic we introduced."""
+\t\t\t\t\t<br><br>The video goes over the final demonstration."""
 datas[0].append([ttl, dt, lns, info])
 
 # page 2
@@ -65,7 +69,7 @@ datas[-1].append([ttl, dt, lns, info])
 
 ttl = "Speedy G"
 dt = "\"I am Speed!\", said the Little Bird"
-lns = [""]
+lns = ["https://www.youtube.com/embed/T2X-0we-XOU"]
 info = "As a petrolhead, it is my passion to make things go fast.<br>This little plane, with a tiny 0.6m wingspan, was designed to be capable of flying safely at <u>160+kph</u>.<br>It was designed entirely by a group of 2 people, with aerodynamic efficiency and lightweightness, the main goals."
 datas[-1].append([ttl, dt, lns, info])
 
