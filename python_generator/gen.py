@@ -43,7 +43,7 @@ datas.append([[ttl, dt, lns, info]])
 
 ttl = "DIY Smartwatch"
 dt = "Designed, manufactured and programmed by self"
-lns = [""]
+lns = ["https://www.youtube.com/embed/iW4tt_eioQQ"]
 info = """Expenditure on education and improvement is okay, buying frivolous objects is not.<br>I wanted a smartwatch.<br>There's only one solution. <a style="color:grey" href="https://github.com/TanmayChhatbar/esp32_smartwatch" target="_blank"><u>DIY</u></a><br><br>The watch is capable of connecting to WiFi to <u>fetch time</u>, as well as keeping count of the number of <u>steps</u> the user walks daily."""
 datas[-1].append([ttl, dt, lns, info])
 
