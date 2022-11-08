@@ -3,17 +3,18 @@ from helpers import *
 #TODO
 # videos
 #   FT Edge video
-#   car datalogger video
 #   factory video
 #   smartwatch video
 # tb3 ppt
 # fun section background
 
-# page 1
-ttl = "Car Datalogger"
-dt = "Data collection during AutoX events"
-lns = [""]
-info = """As a challenge, I engineered a datalogger for my car to collect inertial and GPS data while participating in AutoX events.<br>The result was this ESP32-based device, for which more information can be found on <a style="color:grey" href="https://github.com/TanmayChhatbar/car_datalogger" target="_blank"><u>GitHub</u></a>.<br><br><u>TTGO TS 1.4</u> ESP32-based board, with built-in <u>MPU9250 IMU</u> and a microSD card reader, was used.<br><u>Adafruit Ultimate GPS</u> module is used to get GPS data.<br>Inertial data is collected at around 300Hz, GPS data is collected at 5Hz."""
+# page 1 - automotive robotics
+ttl = "Autonomous Robot"
+dt = "Clemson University - International Center of Automotive Research"
+lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
+info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
+\t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
+\t\t\t\t\t<br><br>The video goes over the final demonstration."""
 datas[0].append([ttl, dt, lns, info])
 
 ttl = "Small scale ADAS"
@@ -22,25 +23,32 @@ lns = ["https://www.youtube.com/embed/nMBGIg3d_ZA"]
 info = """As part of our capstone project for the course 'Automotive Electronics Integration', we were tasked to introduce and demonstrate ADAS systems in a scale vehicle.<br><br>An <u>Arduino Uno</u> board was the central processor for the project.<br><u>HC-SR04</u> ultrasonic sensors were used to detect the sidewalls acting as lanes, and the presence of a head-on obstacle.<br><br>The video goes over our approach and results in introducing features including:<ul class="feat"><li>Lane-Keep Assist</li><li>Adaptive Cruise Control</li></ul>"""
 datas[0].append([ttl, dt, lns, info])
 
-ttl = "Autonomous Robot"
-dt = "Clemson University - International Center of Automotive Research"
-# lns = ["https://www.youtube.com/embed/YXchdEtqzsE",""]
-lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
-# info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
-# \t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
-# \t\t\t\t\t<br><br>The first video goes over the final demonstration. The second summarizes the control logic we introduced."""
-info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
-\t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
-\t\t\t\t\t<br><br>The video goes over the final demonstration."""
-datas[0].append([ttl, dt, lns, info])
-
 ttl = "Motorcycle Gear Shifting Automation"
 dt = "Capstone Project - Bachelor's in Mechanical Engineering"
 lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
 info = "For our undergraduate project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
 datas[0].append([ttl, dt, lns, info])
 
-# page 2
+# page 2 - Automomtive data and modelling
+ttl = "Car Datalogger"
+dt = "Data collection during AutoX events"
+lns = [""]
+info = """As a challenge, I engineered a datalogger for my car to collect inertial and GPS data while participating in AutoX events.<br>The result was this ESP32-based device, for which more information can be found on <a style="color:grey" href="https://github.com/TanmayChhatbar/car_datalogger" target="_blank"><u>GitHub</u></a>.<br><br><u>TTGO TS 1.4</u> ESP32-based board, with built-in <u>MPU9250 IMU</u> and a microSD card reader, was used.<br><u>Adafruit Ultimate GPS</u> module is used to get GPS data.<br>Inertial data is collected at around 300Hz, GPS data is collected at 5Hz."""
+datas.append([[ttl, dt, lns, info]])
+
+ttl = "Multi-wheeled vehicle modelling"
+dt = "Deep Orange 13-14 - Clemson University"
+lns = ["https://www.youtube.com/embed/IsC2Qz7YGao","https://www.youtube.com/embed/obmg_0Rq8ow"]
+info = """Estimation of forces and resultant motion is an important component of vehicle design and control.<br>
+\t\t\t\t\tWe have modelled tools of varying complexity to better understand the dynamic limits of the vehicle we develop. Some of them are shown below<br><br>
+\t\t\t\t\t<ol class="feat">
+\t\t\t\t\t\t<li> Shows the most complex, most "true" model, created in Simscape Multibody.<br>It considers the tracks around the wheels and its interaction with the ground.</li>
+\t\t\t\t\t\t<li> Shows a much simpler, real-time capable model in MATLAB.</li>
+\t\t\t\t\t\t<li> Compilation of funny and failed simulations, just for laughs.</li>
+\t\t\t\t\t\t</ol>"""
+datas[-1].append([ttl, dt, lns, info])
+
+# page 3 - other projects
 ttl = "i1Pro 3 Automated Plotter 2021"
 dt = "Designed, manufactured and programmed by self"
 lns = ["https://www.youtube.com/embed/pWplQDCc0bk"]
@@ -59,7 +67,7 @@ lns = ["https://www.youtube.com/embed/FBkQdyRUgO4"]
 info = "I learnt how to use blender, the software out of interest.<br>This short clip serves to showcase my skills in modelling and animation as a submission for one of the certified courses on a MOOC that taught blender.<br><br>All animations on this page, and their assets have been modelled, textured and rendered by me."
 datas[-1].append([ttl, dt, lns, info])
 
-# page 3
+# page 4 - aero
 ttl = "Boeing Aeromodelling 2019-20 - IIT Kharagpur"
 dt = "Finishing 3<sup>rd</sup> place overall"
 lns = ["https://www.youtube.com/embed/G851yVFitqQ", "https://www.youtube.com/embed/twtrokqZ5k0"]
@@ -91,14 +99,20 @@ lns = [""]
 info = "It's a pleasure to watch an aircraft tumble and roll and loop as much as we used to as kids. Aerobatic planes are probably the most fun flyers one can experience, regardless of the scale.<br>This plane was designed by FliteTest to be the most convenient way of experiencing aerobatics, and it is an absolutely beauty in the hands of a skilled pilot. Trust me, I've seen my mentor fly the wings off it (literally)"
 datas[-1].append([ttl, dt, lns, info])
 
-# page 4
+# page 5 - improvements
 ttl = "Improvements in the Factory"
 dt = "Stagnation isn't good for mind or business"
 info = "I've designed and manufactured multiple automation solutions for use in a factory.<br>These include automatic <u>bottle fillers</u> for packaging soaps and detergents, and miscellaneous devices for streamlining workflow in processing of potato starch."
 lns = [""]
 datas.append([[ttl, dt, lns, info]])
 
-# page 5
+ttl = "Improvements at home"
+dt = "Stagnation isn't good at home either"
+info = "Who likes to stand up and walk over to the switch board to turn the lights on?<br>Who enjoys trying to find the AC remote when it's really hot and you're desperate to be lazy?"
+lns = [""]
+datas[-1].append([ttl, dt, lns, info])
+
+# page 6 - last
 ttl = "What is fun, motivates you."
 dt = "What is love, baby"
 info = "Don't hurt me, don't hurt me, no more."

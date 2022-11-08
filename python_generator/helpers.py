@@ -18,8 +18,8 @@ fullpage_div_start = """    <div id="fullPage">
 """
 
 #######################################################################################################
-anchors = """['auto','plotter','aero']"""
-ntt = """['Automotive Projects','Plotter','Aeromodelling']"""
+anchors = """['auto_robo','auto_model','other','aero','imp','fun']"""
+ntt = """['Automotive Robotics','Automotive Data & Analysis','Other Projects','Aeromodelling','Improvements','Activity']"""
 logo_size = 24
 accounts = f"""<ul id="infoMenu">
         <li><a class="mylinks" href="index.html"><img src="images/logo_homepage.png" width={logo_size}px></a></li>
@@ -38,8 +38,8 @@ end = f"""    </div>
         new fullpage('#fullPage', {{
             autoScrolling: true,
             navigation: true,
-            anchors: ['automotive','other','aero','factory','fun'],
-            navigationTooltips: ['Automotive Projects','Other Projects','Aeromodelling','Factory','Activity'],
+            anchors: {anchors},
+            navigationTooltips: {ntt},
             showActiveTooltip: true,
             slidesNavigation: true,
             controlArrows: false,
