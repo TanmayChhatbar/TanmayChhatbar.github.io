@@ -37,7 +37,7 @@ datas[0].append([ttl, dt, lns, info])
 ttl = "Motorcycle Gear Shifting Automation"
 dt = "Capstone Project - Bachelor's in Mechanical Engineering"
 lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
-info = "For our graduation project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br><br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
+info = "For our undergraduate project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
 datas[0].append([ttl, dt, lns, info])
 
 # page 2
@@ -69,7 +69,7 @@ datas.append([[ttl, dt, lns, info]])
 
 ttl = "SAE Aero Design East 2019"
 dt = "7th* in Mission Performance"
-lns = [""]
+lns = ["https://www.youtube.com/embed/clXUVxfD-9w","https://www.youtube.com/embed/wKr7KCYWeT8"]
 info = "SAE Aero Design East, a competition held in Fort Worth, Texas, was an international-level challenge taken up by <u>6 students</u> from our university.<br>An aircraft with a 12ft wingspan, weighing less than 7.5kg was designed and manufactured to lift <u>17.5kg of additional payload</u>, including 50-odd tennis balls, and steel plates.<br><br>The aircraft performed well through heavy crosswinds for a first-year team to bag <u>7th place</u> in Mission Performance."
 datas[-1].append([ttl, dt, lns, info])
 
