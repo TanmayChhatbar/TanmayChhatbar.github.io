@@ -102,14 +102,19 @@ datas[-1].append([ttl, dt, lns, info])
 # page 5 - improvements
 ttl = "Improvements in the Factory"
 dt = "Stagnation isn't good for mind or business"
-info = "I've designed and manufactured multiple automation solutions for use in a factory.<br>These include automatic <u>bottle fillers</u> for packaging soaps and detergents, and miscellaneous devices for streamlining workflow in processing of potato starch."
-lns = [""]
+info = """During my undergraduate studies, I designed and manufactured multiple automation solutions and miscellaneous devices for streamlining workflow in processing of potato starch, soaps and detergents. for use in a factory.<br>These include:
+\t\t\t\t\t<ol class="feat">
+\t\t\t\t\t\t<li>Automatic bottle fillers for packaging soaps and detergents</li>
+\t\t\t\t\t\t<li>Sound-based acid flow-rate and quantity estimation for positive displacement pumps.</li>
+\t\t\t\t\t\t<li>Packaging heatshrink auto-cutter.</li>
+\t\t\t\t\t</ol>"""
+lns = ["https://www.youtube.com/embed/XmRJAW47A9g","https://www.youtube.com/embed/5h9r28wX8vo","https://www.youtube.com/embed/MwPSW_m9hzk"]
 datas.append([[ttl, dt, lns, info]])
 
 ttl = "Improvements at home"
 dt = "Stagnation isn't good at home either"
 info = "Who likes to stand up and walk over to the switch board to turn the lights on?<br>Who enjoys trying to find the AC remote when it's really hot and you're desperate to be lazy?"
-lns = [""]
+lns = ["https://www.youtube.com/embed/3ymYBt0vYeg","https://www.youtube.com/embed/ehGC3uAFM-8"]
 datas[-1].append([ttl, dt, lns, info])
 
 # page 6 - last
