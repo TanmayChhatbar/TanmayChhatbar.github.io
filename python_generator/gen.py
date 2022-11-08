@@ -34,6 +34,12 @@ info = """The course 'Autonomy: Science and Systems' at CU-ICAR required program
 \t\t\t\t\t<br><br>The video goes over the final demonstration."""
 datas[0].append([ttl, dt, lns, info])
 
+ttl = "Motorcycle Gear Shifting Automation"
+dt = "Capstone Project - Bachelor's in Mechanical Engineering"
+lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
+info = "For our graduation project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br><br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
+datas[0].append([ttl, dt, lns, info])
+
 # page 2
 ttl = "i1Pro 3 Automated Plotter 2021"
 dt = "Designed, manufactured and programmed by self"
