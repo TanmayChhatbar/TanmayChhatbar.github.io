@@ -19,7 +19,7 @@ fullpage_div_start = """    <div id="fullPage">
 
 #######################################################################################################
 anchors = """['auto_robo','auto_model','other','aero','imp','fun']"""
-ntt = """['Automotive Robotics','Automotive Data & Analysis','Other Projects','Aeromodelling','Improvements','Activity']"""
+ntt = """['Automotive robotics','Automotive data & analysis','Other projects','Aeromodelling','Improvements','Activity']"""
 logo_size = 24
 accounts = f"""<ul id="infoMenu">
         <li><a class="mylinks" href="index.html"><img src="images/logo_homepage.png" width={logo_size}px></a></li>

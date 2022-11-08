@@ -9,7 +9,7 @@ from helpers import *
 # fun section background
 
 # page 1 - automotive robotics
-ttl = "Autonomous Robot"
+ttl = "Autonomous robot"
 dt = "Clemson University - International Center of Automotive Research"
 lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
 info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
@@ -23,14 +23,14 @@ lns = ["https://www.youtube.com/embed/nMBGIg3d_ZA"]
 info = """As part of our capstone project for the course 'Automotive Electronics Integration', we were tasked to introduce and demonstrate ADAS systems in a scale vehicle.<br><br>An <u>Arduino Uno</u> board was the central processor for the project.<br><u>HC-SR04</u> ultrasonic sensors were used to detect the sidewalls acting as lanes, and the presence of a head-on obstacle.<br><br>The video goes over our approach and results in introducing features including:<ul class="feat"><li>Lane-Keep Assist</li><li>Adaptive Cruise Control</li></ul>"""
 datas[0].append([ttl, dt, lns, info])
 
-ttl = "Motorcycle Gear Shifting Automation"
+ttl = "Motorcycle gear shifting automation"
 dt = "Capstone Project - Bachelor's in Mechanical Engineering"
 lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
 info = "For our undergraduate project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
 datas[0].append([ttl, dt, lns, info])
 
 # page 2 - Automomtive data and modelling
-ttl = "Car Datalogger"
+ttl = "Vehicle datalogger"
 dt = "Data collection during AutoX events"
 lns = [""]
 info = """As a challenge, I engineered a datalogger for my car to collect inertial and GPS data while participating in AutoX events.<br>The result was this ESP32-based device, for which more information can be found on <a style="color:grey" href="https://github.com/TanmayChhatbar/car_datalogger" target="_blank"><u>GitHub</u></a>.<br><br><u>TTGO TS 1.4</u> ESP32-based board, with built-in <u>MPU9250 IMU</u> and a microSD card reader, was used.<br><u>Adafruit Ultimate GPS</u> module is used to get GPS data.<br>Inertial data is collected at around 300Hz, GPS data is collected at 5Hz."""
@@ -49,10 +49,10 @@ info = """Estimation of forces and resultant motion is an important component of
 datas[-1].append([ttl, dt, lns, info])
 
 # page 3 - other projects
-ttl = "i1Pro 3 Automated Plotter 2021"
+ttl = "i1Pro 3 automated plotter"
 dt = "Designed, manufactured and programmed by self"
 lns = ["https://www.youtube.com/embed/pWplQDCc0bk"]
-info = "I took up a project for one of my mentors to automate a color-scanning tool using hobby-grade electronics.<br>An <u>Arduino Nano</u> board with a stepper board was used, running fully custom-written <u>path calculation</u> software.<br>An intuitive <u>UI</u> was introduced along with a joystick to guide the process in multiple scanning modes and velocities, including a manual mode.<br>The hardware was designed in <u>CAD</u>, with a number of parts being <u>3D printed</u>.<br><br>The video shows testing of the solution."
+info = "In 2021, I took up a project for one of my mentors to automate a color-scanning tool using hobby-grade electronics.<br>An <u>Arduino Nano</u> board with a stepper board was used, running fully custom-written <u>path calculation</u> software.<br>An intuitive <u>UI</u> was introduced along with a joystick to guide the process in multiple scanning modes and velocities, including a manual mode.<br>The hardware was designed in <u>CAD</u>, with a number of parts being <u>3D printed</u>.<br><br>The video shows testing of the solution."
 datas.append([[ttl, dt, lns, info]])
 
 ttl = "DIY Smartwatch"
@@ -61,7 +61,7 @@ lns = ["https://www.youtube.com/embed/iW4tt_eioQQ"]
 info = """Expenditure on education and improvement is okay, buying frivolous objects is not.<br>I wanted a smartwatch.<br>There's only one solution. <a style="color:grey" href="https://github.com/TanmayChhatbar/esp32_smartwatch" target="_blank"><u>DIY</u></a><br><br>The watch is capable of connecting to WiFi to <u>fetch time</u>, as well as keeping count of the number of <u>steps</u> the user walks daily."""
 datas[-1].append([ttl, dt, lns, info])
 
-ttl = "Project Render"
+ttl = "Project render"
 dt = "In learning Blender modelling software"
 lns = ["https://www.youtube.com/embed/FBkQdyRUgO4"]
 info = "I learnt how to use blender, the software out of interest.<br>This short clip serves to showcase my skills in modelling and animation as a submission for one of the certified courses on a MOOC that taught blender.<br><br>All animations on this page, and their assets have been modelled, textured and rendered by me."
@@ -100,7 +100,7 @@ info = "It's a pleasure to watch an aircraft tumble and roll and loop as much as
 datas[-1].append([ttl, dt, lns, info])
 
 # page 5 - improvements
-ttl = "Improvements in the Factory"
+ttl = "Improvements in the factory"
 dt = "Stagnation isn't good for mind or business"
 info = """During my undergraduate studies, I designed and manufactured multiple automation solutions and miscellaneous devices for streamlining workflow in processing of potato starch, soaps and detergents. for use in a factory.<br>These include:
 \t\t\t\t\t<ol class="feat">
@@ -118,9 +118,9 @@ lns = ["https://www.youtube.com/embed/3ymYBt0vYeg","https://www.youtube.com/embe
 datas[-1].append([ttl, dt, lns, info])
 
 # page 6 - last
-ttl = "What is fun, motivates you."
+ttl = "What is fun, motivates you"
 dt = "What is love, baby"
-info = "Don't hurt me, don't hurt me, no more."
+info = "Don't hurt me, don't hurt me, no more"
 lns = ["https://www.youtube.com/embed/L_vGYdL0Qy8","https://www.youtube.com/embed/rsrUuE2ELrc"]
 datas.append([[ttl, dt, lns, info]])
 
