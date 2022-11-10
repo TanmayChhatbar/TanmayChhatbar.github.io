@@ -1,3 +1,6 @@
+anchors = """['auto_robo','auto_model','aero','other','imp','fun']"""
+ntt = """['Automotive robotics','Automotive data & analysis','Aeromodelling','Other projects','Improvements','Activity']"""
+
 from helpers import *
 
 #TODO
