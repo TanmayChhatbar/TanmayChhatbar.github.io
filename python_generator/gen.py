@@ -48,26 +48,7 @@ info = """Estimation of forces and resultant motion is an important component of
 \t\t\t\t\t\t</ol>"""
 datas[-1].append([ttl, dt, lns, info])
 
-# page 3 - other projects
-ttl = "i1Pro 3 automated plotter"
-dt = "Designed, manufactured and programmed by self"
-lns = ["https://www.youtube.com/embed/pWplQDCc0bk"]
-info = "In 2021, I took up a project for one of my mentors to automate a color-scanning tool using hobby-grade electronics.<br>An <u>Arduino Nano</u> board with a stepper board was used, running fully custom-written <u>path calculation</u> software.<br>An intuitive <u>UI</u> was introduced along with a joystick to guide the process in multiple scanning modes and velocities, including a manual mode.<br>The hardware was designed in <u>CAD</u>, with a number of parts being <u>3D printed</u>.<br><br>The video shows testing of the solution."
-datas.append([[ttl, dt, lns, info]])
-
-ttl = "DIY Smartwatch"
-dt = "Designed, manufactured and programmed by self"
-lns = ["https://www.youtube.com/embed/iW4tt_eioQQ"]
-info = """Expenditure on education and improvement is okay, buying frivolous objects is not.<br>I wanted a smartwatch.<br>There's only one solution. <a style="color:grey" href="https://github.com/TanmayChhatbar/esp32_smartwatch" target="_blank"><u>DIY</u></a><br><br>The watch is capable of connecting to WiFi to <u>fetch time</u>, as well as keeping count of the number of <u>steps</u> the user walks daily."""
-datas[-1].append([ttl, dt, lns, info])
-
-ttl = "Project render"
-dt = "In learning Blender modelling software"
-lns = ["https://www.youtube.com/embed/FBkQdyRUgO4"]
-info = "I learnt how to use blender, the software out of interest.<br>This short clip serves to showcase my skills in modelling and animation as a submission for one of the certified courses on a MOOC that taught blender.<br><br>All animations on this page, and their assets have been modelled, textured and rendered by me."
-datas[-1].append([ttl, dt, lns, info])
-
-# page 4 - aero
+# page 3 - aero
 ttl = "Boeing Aeromodelling 2019-20 - IIT Kharagpur"
 dt = "Finishing 3<sup>rd</sup> place overall"
 lns = ["https://www.youtube.com/embed/G851yVFitqQ", "https://www.youtube.com/embed/twtrokqZ5k0"]
@@ -97,6 +78,25 @@ ttl = "Aerobatics"
 dt = "What fun is flying straight"
 lns = [""]
 info = "It's a pleasure to watch an aircraft tumble and roll and loop as much as we used to as kids. Aerobatic planes are probably the most fun flyers one can experience, regardless of the scale.<br>This plane was designed by FliteTest to be the most convenient way of experiencing aerobatics, and it is an absolutely beauty in the hands of a skilled pilot. Trust me, I've seen my mentor fly the wings off it (literally)"
+datas[-1].append([ttl, dt, lns, info])
+
+# page 4 - other projects
+ttl = "i1Pro 3 automated plotter"
+dt = "Designed, manufactured and programmed by self"
+lns = ["https://www.youtube.com/embed/pWplQDCc0bk"]
+info = "In 2021, I took up a project for one of my mentors to automate a color-scanning tool using hobby-grade electronics.<br>An <u>Arduino Nano</u> board with a stepper board was used, running fully custom-written <u>path calculation</u> software.<br>An intuitive <u>UI</u> was introduced along with a joystick to guide the process in multiple scanning modes and velocities, including a manual mode.<br>The hardware was designed in <u>CAD</u>, with a number of parts being <u>3D printed</u>.<br><br>The video shows testing of the solution."
+datas.append([[ttl, dt, lns, info]])
+
+ttl = "DIY Smartwatch"
+dt = "Designed, manufactured and programmed by self"
+lns = ["https://www.youtube.com/embed/iW4tt_eioQQ"]
+info = """Expenditure on education and improvement is okay, buying frivolous objects is not.<br>I wanted a smartwatch.<br>There's only one solution. <a style="color:grey" href="https://github.com/TanmayChhatbar/esp32_smartwatch" target="_blank"><u>DIY</u></a><br><br>The watch is capable of connecting to WiFi to <u>fetch time</u>, as well as keeping count of the number of <u>steps</u> the user walks daily."""
+datas[-1].append([ttl, dt, lns, info])
+
+ttl = "Project render"
+dt = "In learning Blender modelling software"
+lns = ["https://www.youtube.com/embed/FBkQdyRUgO4"]
+info = "I learnt how to use blender, the software out of interest.<br>This short clip serves to showcase my skills in modelling and animation as a submission for one of the certified courses on a MOOC that taught blender.<br><br>All animations on this page, and their assets have been modelled, textured and rendered by me."
 datas[-1].append([ttl, dt, lns, info])
 
 # page 5 - improvements

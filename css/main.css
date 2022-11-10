@@ -112,52 +112,52 @@ a:active {
     background-position: 80%;
 }
 .s31{
-    background: url('../media/plotter.gif');
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-}
-.s32{
-    background: url('../media/smartwatch.gif');
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-}
-.s33{
-    background: url('../media/blender_logo.png');
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-position: 80%;
-}
-.s41{
     background: url('../media/boeing_p3.gif');
     background-size: 90%;
     background-position: 250%;
     background-repeat: no-repeat;
 }
-.s42{
+.s32{
     background: url('../media/sae.gif');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: 250%;
 }
-.s43{
+.s33{
     background: url('../media/speedy_g.gif');
     background-size: 90%;
     background-position: 250%;
     background-repeat: no-repeat;
 }
-.s44{
+.s34{
     background: url('../media/foomie.gif');
     background-size: 90%;
     background-position: 250%;
     background-repeat: no-repeat;
 }
-.s45{
+.s35{
     background: url('../media/ft.gif');
     background-size: 90%;
     background-position: 250%;
     background-repeat: no-repeat;
+}
+.s41{
+    background: url('../media/plotter.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.s42{
+    background: url('../media/smartwatch.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.s43{
+    background: url('../media/blender_logo.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 80%;
 }
 .s51{
     background: url('../media/automotive.gif');
