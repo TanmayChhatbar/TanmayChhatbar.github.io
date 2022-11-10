@@ -14,6 +14,8 @@ start = """<html>
 
 #######################################################################################################
 
+anchors = """['auto_robo','auto_model','aero','other','imp','fun']"""
+ntt = """['Automotive robotics','Automotive data & analysis','Aeromodelling','Other projects','Improvements','Activity']"""
 fullpage_div_start = """    <div id="fullPage">
 """
 
