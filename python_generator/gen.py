@@ -3,8 +3,6 @@ from helpers import *
 #TODO
 # videos
 #   FT Edge video
-#   factory video
-#   smartwatch video
 # tb3 ppt
 # fun section background
 
