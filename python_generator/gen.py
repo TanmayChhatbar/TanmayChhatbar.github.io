@@ -36,7 +36,7 @@ datas.append([[ttl, dt, lns, info]])
 
 ttl = "Multi-wheeled vehicle modelling"
 dt = "Deep Orange 13-14 - Clemson University"
-lns = ["https://www.youtube.com/embed/IsC2Qz7YGao","https://www.youtube.com/embed/obmg_0Rq8ow"]
+lns = ["https://www.youtube.com/embed/B7_-ia0J6QU","https://www.youtube.com/embed/IsC2Qz7YGao","https://www.youtube.com/embed/obmg_0Rq8ow"]
 info = """Estimation of forces and resultant motion is an important component of vehicle design and control.<br>
 \t\t\t\t\tWe have modelled tools of varying complexity to better understand the dynamic limits of the vehicle we develop. Some of them are shown below.<br><br>
 \t\t\t\t\t<ol class="feat">
