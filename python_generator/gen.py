@@ -38,12 +38,13 @@ ttl = "Multi-wheeled vehicle modelling"
 dt = "Deep Orange 13-14 - Clemson University"
 lns = ["https://www.youtube.com/embed/IsC2Qz7YGao","https://www.youtube.com/embed/obmg_0Rq8ow"]
 info = """Estimation of forces and resultant motion is an important component of vehicle design and control.<br>
-\t\t\t\t\tWe have modelled tools of varying complexity to better understand the dynamic limits of the vehicle we develop. Some of them are shown below<br><br>
+\t\t\t\t\tWe have modelled tools of varying complexity to better understand the dynamic limits of the vehicle we develop. Some of them are shown below.<br><br>
 \t\t\t\t\t<ol class="feat">
+\t\t\t\t\t\t<li> An overview of the Deep Orange 13-14 project.</li>
 \t\t\t\t\t\t<li> Shows the most complex, most "true" model, created in Simscape Multibody.<br>It considers the tracks around the wheels and its interaction with the ground.</li>
-\t\t\t\t\t\t<li> Shows a much simpler, real-time capable model in MATLAB.</li>
-\t\t\t\t\t\t<li> Compilation of funny and failed simulations, just for laughs.</li>
+\t\t\t\t\t\t<li> Shows a much simpler, real-time capable model developed in MATLAB.</li>
 \t\t\t\t\t\t</ol>"""
+# \t\t\t\t\t\t<li> Compilation of funny and failed simulations, just for laughs.</li>
 datas[-1].append([ttl, dt, lns, info])
 
 # page 3 - aero

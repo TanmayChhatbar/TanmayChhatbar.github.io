@@ -171,6 +171,12 @@ a:active {
     background-repeat: no-repeat;
     background-position: 70%;
 }
+.s61{
+    background: url('../media/2jz_colored_s_better.gif');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
 .section{
     z-index: 0;
     padding-top: 0px !important;
