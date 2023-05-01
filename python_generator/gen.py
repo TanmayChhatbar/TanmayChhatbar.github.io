@@ -6,34 +6,7 @@ from helpers import *
 # tb3 ppt
 # fun section background
 
-# page 1 - automotive robotics
-ttl = "Autonomous robot"
-dt = "Clemson University - International Center of Automotive Research"
-lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
-info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
-\t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
-\t\t\t\t\t<br><br>The video goes over the final demonstration."""
-datas[0].append([ttl, dt, lns, info])
-
-ttl = "Small scale ADAS"
-dt = "Clemson University - International Center of Automotive Research"
-lns = ["https://www.youtube.com/embed/nMBGIg3d_ZA"]
-info = """As part of our capstone project for the course 'Automotive Electronics Integration', we were tasked to introduce and demonstrate ADAS systems in a scale vehicle.<br><br>An <u>Arduino Uno</u> board was the central processor for the project.<br><u>HC-SR04</u> ultrasonic sensors were used to detect the sidewalls acting as lanes, and the presence of a head-on obstacle.<br><br>The video goes over our approach and results in introducing features including:<ul class="feat"><li>Lane-Keep Assist</li><li>Adaptive Cruise Control</li></ul>"""
-datas[0].append([ttl, dt, lns, info])
-
-ttl = "Motorcycle gear shifting automation"
-dt = "Capstone Project - Bachelor's in Mechanical Engineering"
-lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
-info = "For our undergraduate project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
-datas[0].append([ttl, dt, lns, info])
-
-# page 2 - Automomtive data and modelling
-ttl = "Vehicle datalogger"
-dt = "Data collection during AutoX events"
-lns = [""]
-info = """As a challenge, I engineered a datalogger for my car to collect inertial and GPS data while participating in AutoX events.<br>The result was this ESP32-based device, for which more information can be found on <a style="color:grey" href="https://github.com/TanmayChhatbar/car_datalogger" target="_blank"><u>GitHub</u></a>.<br><br><u>TTGO TS 1.4</u> ESP32-based board, with built-in <u>MPU9250 IMU</u> and a microSD card reader, was used.<br><u>Adafruit Ultimate GPS</u> module is used to get GPS data.<br>Inertial data is collected at around 300Hz, GPS data is collected at 5Hz."""
-datas.append([[ttl, dt, lns, info]])
-
+# page 1 - Automomtive data and modelling
 ttl = "Multi-wheeled vehicle modelling"
 dt = "Deep Orange 13-14 - Clemson University"
 lns = ["https://www.youtube.com/embed/B7_-ia0J6QU","https://www.youtube.com/embed/IsC2Qz7YGao","https://www.youtube.com/embed/obmg_0Rq8ow"]
@@ -45,6 +18,33 @@ info = """Estimation of forces and resultant motion is an important component of
 \t\t\t\t\t\t<li> Shows a much simpler, real-time capable model developed in MATLAB.</li>
 \t\t\t\t\t\t</ol>"""
 # \t\t\t\t\t\t<li> Compilation of funny and failed simulations, just for laughs.</li>
+datas[0].append([ttl, dt, lns, info])
+
+ttl = "Vehicle datalogger"
+dt = "Data collection during AutoX events"
+lns = [""]
+info = """As a challenge, I engineered a datalogger for my car to collect inertial and GPS data while participating in AutoX events.<br>The result was this ESP32-based device, for which more information can be found on <a style="color:grey" href="https://github.com/TanmayChhatbar/car_datalogger" target="_blank"><u>GitHub</u></a>.<br><br><u>TTGO TS 1.4</u> ESP32-based board, with built-in <u>MPU9250 IMU</u> and a microSD card reader, was used.<br><u>Adafruit Ultimate GPS</u> module is used to get GPS data.<br>Inertial data is collected at around 300Hz, GPS data is collected at 5Hz."""
+datas[-1].append([ttl, dt, lns, info])
+
+# page 2 - automotive robotics
+ttl = "Autonomous robot"
+dt = "Clemson University - International Center of Automotive Research"
+lns = ["https://www.youtube.com/embed/YXchdEtqzsE"]
+info = """The course 'Autonomy: Science and Systems' at CU-ICAR required programming a <u>Turtlebot3</u> robot to take on the following challenges.</p>\n\t\t\t\t<ul class="feat"><li>Wall following</li><li>Obstacle avoidance</li><li>Line following</li><li>Stop-sign detection</li><li>Apriltag following</li></ul>\n\t\t\t\t<p class="info">
+\t\t\t\t\tThe Turtlebot3 is equipped with a <u>Raspberry Pi 4</u> computer which is responsible for much of the onboard data processing and publishing.<br><u>OpenCR</u> board is in charge of receiving commands from the Pi and powering and controlling power-intensive components including servos, motors, LiDAR and camera(s).<br>Computationally intensive tasks were offloaded onto a more powerful <u>Linux laptop</u>.
+\t\t\t\t\t<br><br>The video goes over the final demonstration."""
+datas.append([[ttl, dt, lns, info]])
+
+ttl = "Small scale ADAS"
+dt = "Clemson University - International Center of Automotive Research"
+lns = ["https://www.youtube.com/embed/nMBGIg3d_ZA"]
+info = """As part of our capstone project for the course 'Automotive Electronics Integration', we were tasked to introduce and demonstrate ADAS systems in a scale vehicle.<br><br>An <u>Arduino Uno</u> board was the central processor for the project.<br><u>HC-SR04</u> ultrasonic sensors were used to detect the sidewalls acting as lanes, and the presence of a head-on obstacle.<br><br>The video goes over our approach and results in introducing features including:<ul class="feat"><li>Lane-Keep Assist</li><li>Adaptive Cruise Control</li></ul>"""
+datas[-1].append([ttl, dt, lns, info])
+
+ttl = "Motorcycle gear shifting automation"
+dt = "Capstone Project - Bachelor's in Mechanical Engineering"
+lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
+info = "For our undergraduate project, we decided to design and fabricate a <u>bolt-on automation system</u> to convert a motorcycle's controls into those similar to an automatic scooter.<br>This included automating the <u>clutch, gears and throttle</u> to follow rider input while considering engine RPM, speed, etc. <br><br>This video was made as a submission to the CS50 MOOC course, and shows a representation of what we had imaged for the project."
 datas[-1].append([ttl, dt, lns, info])
 
 # page 3 - aero

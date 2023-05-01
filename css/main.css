@@ -81,31 +81,31 @@ a:active {
 }
 
 /* backgrounds */
-.s11{
+.s21{
     background: url('../media/tb3_rev.gif');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: 250%;
 }
-.s12{
+.s22{
     background: url('../media/adas.gif');
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 100%;
 }
-.s13{
+.s23{
     background: url('../media/r6_rev.gif');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 160%;
 }
-.s21{
+.s12{
     background: url('../media/datalogger2.2_fr.gif');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 150%;
 }
-.s22{
+.s11{
     background: url('../media/do13.gif');
     background-size: 70%;
     background-repeat: no-repeat;
