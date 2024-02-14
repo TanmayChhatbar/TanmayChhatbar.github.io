@@ -165,6 +165,18 @@ a:active {
     background-repeat: no-repeat;
     background-position: 80%;
 }
+.s44{
+    background: url('../media/r6_rev.gif');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 160%;
+}
+.s45{
+    background: url('../media/3d_printer.gif');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
 .s51{
     background: url('../media/automotive.gif');
     background-size: 20%;
