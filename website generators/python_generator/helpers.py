@@ -14,8 +14,8 @@ start = """<html>
 
 #######################################################################################################
 
-anchors = """['about_me','auto_model','auto_robo','aero','other','imp','fun']"""
-ntt = """['About me','Automotive data & analysis','Automotive robotics','Aeromodelling','Other projects','Improvements','Activity']"""
+anchors = """['about_me','auto_model','auto_robo','aero','electronics','3dmodel','automation','activity']"""
+ntt = """['About me','Automotive data & analysis','Automotive robotics','Aeromodelling','Electronics','3D Modelling and Animation','Automation','Activity']"""
 fullpage_div_start = """    <div id="fullPage">
         <div class="section">
             <div class="slide 01">

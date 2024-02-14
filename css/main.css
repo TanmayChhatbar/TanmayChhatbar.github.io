@@ -159,37 +159,37 @@ a:active {
     background-repeat: no-repeat;
     background-position: 100%;
 }
-.s43{
+.s51{
     background: url('../media/blender_logo.png');
     background-size: 25%;
     background-repeat: no-repeat;
     background-position: 80%;
 }
-.s44{
+.s52{
     background: url('../media/r6_rev.gif');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 160%;
 }
-.s45{
+.s53{
     background: url('../media/3d_printer.gif');
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 80%;
 }
-.s51{
-    background: url('../media/automotive.gif');
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 70%;
-}
-.s52{
-    background: url('../media/automotive.gif');
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 70%;
-}
 .s61{
+    background: url('../media/automotive.gif');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+.s62{
+    background: url('../media/automotive.gif');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+.s71{
     background: url('../media/2jz_colored_s_better.gif');
     background-size: 40%;
     background-repeat: no-repeat;
