@@ -146,7 +146,7 @@ datas[-1].append([ttl, dt, lns, info])
 ttl = "What is fun, motivates you"
 dt = "What is love, baby"
 info = "Don't hurt me, don't hurt me, no more"
-lns = ["https://www.youtube.com/embed/L_vGYdL0Qy8","https://www.youtube.com/embed/rsrUuE2ELrc"]
+lns = ["https://www.youtube.com/embed/WI3La0e9X_I?si=0w_R1Xm7GftYk6Tj","https://www.youtube.com/embed/L_vGYdL0Qy8","https://www.youtube.com/embed/rsrUuE2ELrc"]
 datas.append([[ttl, dt, lns, info]])
 
 # backup current html to new file
