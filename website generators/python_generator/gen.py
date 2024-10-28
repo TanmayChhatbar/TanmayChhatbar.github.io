@@ -20,6 +20,18 @@ info = """Estimation of forces and resultant motion is an important component of
 # \t\t\t\t\t\t<li> Compilation of funny and failed simulations, just for laughs.</li>
 datas[0].append([ttl, dt, lns, info])
 
+ttl = "Configurable Multi-body dynamics"
+dt = "CU-ICAR"
+lns = ["https://www.youtube.com/embed/FkfBmEzlezY?si=UlAneS0lNl2SsCih"]
+info = """A fully configurable MBD model of a car was created in Simscape Multibody. <br>
+					The model includes the following.<br><br>
+					<ol class="feat">
+						<li> Pacejka tyre model.</li>
+						<li> Double-wishbone suspension on all corners. </li>
+						<li> Configurable propulsion </li>
+                    </ol>"""
+datas[-1].append([ttl, dt, lns, info])
+
 ttl = "Tractor-trailer modelling"
 dt = "CU-ICAR"
 lns = ["https://www.youtube.com/embed/hhK23FUT47k"]

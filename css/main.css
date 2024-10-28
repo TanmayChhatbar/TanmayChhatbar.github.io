@@ -99,6 +99,12 @@ a:active {
     background-repeat: no-repeat;
     background-position: 160%;
 }
+.s11{
+    background: url('../media/do14.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
 .s12{
     background: url('../media/automotive.gif');
     background-size: 20%;
@@ -106,16 +112,16 @@ a:active {
     background-position: 70%;
 }
 .s13{
+    background: url('../media/automotive.gif');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+.s14{
     background: url('../media/datalogger2.2_fr.gif');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 150%;
-}
-.s11{
-    background: url('../media/do14.gif');
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: 100%;
 }
 .s31{
     background: url('../media/boeing_p3.gif');
