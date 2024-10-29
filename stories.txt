@@ -1,0 +1,134 @@
+phd
+    continued work on research in skid-steered vehicle modeling
+        combining planar with suspension models
+        model fitting and vehicle characterization through optimization
+    creating wheeled vehicle models of different fidelity
+        1-dof drivecycle models
+        2-dof - slip angle, yawrate
+        4-dof - heave, heaverate, pitch, pitchrate
+        MBD - Simscape multibody + configurable double wishbone, pacejka tyre, 
+
+RA
+    vehicle characterization
+    researching parameter estimation
+        yaw moment using data
+    instrumentation
+        instrumentation utility
+        sensor selection
+        hardware
+        DAQ
+
+vehicle dynamics & controls
+    ff+fb control development throughout
+    interact with autonomy on how to close the loop using GPS data
+
+automation
+    auto-fill systems
+        fast/slow fill
+        sound-based flow estimate
+        automatic label sticking on container
+        automatic heatshrink cutting 
+
+sae aero design
+    small team, 2 designers
+    designed the entire fuselage, tail-selection
+    heavier than competition, but reliable
+    lower lateral cross-section, so side-winds affected us less and allowed more reasonable performance in gusty winds
+    experienced and addressed failures during the competition too
+
+boeing aeromodeling
+    optimized wing design, made elliptical
+    novel solution for maximizing dynamic thrust while following static thrust requirements
+
+python
+    many mini-projects
+
+CAD
+    many mini-projects
+
+MCU
+    programming for ESP32, arduino
+    latest project, cadence sensor
+    LED strip automation
+    AC control
+    house lights control
+
+projects
+    multi-wheeled modeling
+        in lower-fidelity matlab models
+        automatic track location generation in simulink using matlab scripts
+        commercial solutions - AGX dynamics, basics on Chrono
+
+    tractor trailer
+        end-sem project for VD course
+        
+    datalogger
+        interfacing Adafruit GPS module and MPU9250 IMU with an ESP32
+
+    autonomous robot
+        introduction to ROS, turtlebot 
+            wall-following
+            obstacle avoidance
+            line-following
+            stop-sign
+            april-tag
+    
+    adas
+        ultrasonic sensors for acc and lane-keep assist
+        addressed challenges in deployment due to quirks of ESC response to input
+
+    smartwatch
+        step-count without machine learning
+        time syncing with NTP servers
+
+    i1Pro3
+        designed aluminum extrusion frame 
+        3D printed components for sliders and enclosures
+        custom firmware
+            position setup
+            skew-correction
+            stop-point coordinate calculation
+            button activation
+            UI using a tiny LCD display
+    automation
+
+================ tips ==================
+https://www.tesla.com/careers/search/job/internship-controls-engineer-vehicle-controls-winter-spring-2025-225114
+
+Topics such as vehicle dynamics, classic controls concepts, and controls fundamentals will be covered during the interview
+Some conversational questions during the interview might be:
+    What previous work or project have you completed which would be relevant and why?
+        i see n main intersections between my experiences and the job description
+        vehicle dynamics modeling and understanding. ive spent half my life thinking about cars 
+        torque control algorithms for trajectory maintenance (DO14)
+        firmware/integration engineers - can read and write basic code in C/C++
+        calibration - extensive experience in sensor selection and calibration for data collection 
+        analysis tools - extensive experience in writing script to analyse and automate the analysis for repeated testing
+      
+    What are some of the hardest problems you've had to solve? How did you examine it before proceeding?
+        speed control for DO14 vehicle
+        issues with fbk control
+        hence used ff+fbk control
+        seems straightforward to think about it, but it is involved
+            understanding the vehicle's dynamics and modeling those forces
+            unlike a car tyre, skid-steer research is not as well standardized
+            models that exist are primarily used for design and development, and are expensive and have many, many parameters
+            a simplified steady state map that relates the desired output to a required input is needed
+            this map needs to mimic the real vehicle's response
+            vehicle testing for data collection
+            data collection 
+            etc
+        ultimate goal with this research on skid-steered vehicles in general is 
+            to estimate the 4 parameters that define the feedforward map in real-time to adapt to changing surfaces
+
+    Why do you want to work at Tesla?
+        i spoke with a few engineers and ex interns at tesla
+        close-knit development between all teams
+            i am not limited to just one of my skills
+            can leverage my knowledge in different domains to improve the product
+            i can learn more about a variety of subjects quicker, by doing
+        innnovation
+        willingness and acceptance of new ideas
+        freedom to explore alternate solutions
+
+Q - how do you sense the torque/force on the steering rack with a motor?
