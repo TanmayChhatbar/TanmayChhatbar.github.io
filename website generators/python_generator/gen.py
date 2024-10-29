@@ -26,8 +26,8 @@ lns = ["https://www.youtube.com/embed/FkfBmEzlezY?si=UlAneS0lNl2SsCih"]
 info = """A fully configurable MBD model of a car was created in Simscape Multibody. <br>
 					The model includes the following.<br><br>
 					<ol class="feat">
+						<li> Fully configurable double-wishbone suspension on all corners. </li>
 						<li> Pacejka tyre model.</li>
-						<li> Double-wishbone suspension on all corners. </li>
 						<li> Configurable propulsion </li>
                     </ol>"""
 datas[-1].append([ttl, dt, lns, info])
