@@ -82,24 +82,30 @@ a:active {
 
 /* backgrounds */
 .s11{
-    background: url('../media/do14.gif');
+    background: url('../media/IS300_drifting.gif');
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 100%;
 }
 .s12{
+    background: url('../media/do14.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.s13{
     background: url('../media/is300 toon - mbd.gif');
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 100%;
 }
-.s13{
+.s14{
     background: url('../media/tractor_trailer.gif');
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 100%;
 }
-.s14{
+.s15{
     background: url('../media/datalogger2.2_fr.gif');
     background-size: 80%;
     background-repeat: no-repeat;

@@ -7,6 +7,20 @@ from helpers import *
 # fun section background
 
 # page 1 - Automomtive data and modelling
+ttl = "Vehicle Dynamics and Control"
+dt = "Autonomous Drift Control"
+lns = ["https://www.youtube.com/embed/29gUpRrnJ5A?si=zav9KWwZAjjTpLzN"]
+info = """An intermediate milestone to the goal of autonomous drift control in the real world, this highlights the nonlinear modeling of a 4-wheeled car in C++, interfacing with ROS2 for visualization, and eventually control.<br>
+\t\t\t\t\t<ul class="feat">
+\t\t\t\t\t\t<li>Type of drivetrain (FWD, RWD, AWD)</li>
+\t\t\t\t\t\t<li>Type of differential (open, limited-slip, locked)</li>
+\t\t\t\t\t\t<li>Torque, power limits</li>
+\t\t\t\t\t\t<li>Pacejka curves for tyres (combined slip)</li>
+\t\t\t\t\t\t<li>Car parameters</li>
+\t\t\t\t\t\t<li>Optional visualization and joystick control using ROS2</li>
+\t\t\t\t\t</ul>"""
+datas[0].append([ttl, dt, lns, info])
+
 ttl = "Multi-wheeled vehicle modelling"
 dt = "Deep Orange 13-14 - Clemson University"
 lns = ["https://www.youtube.com/embed/B7_-ia0J6QU","https://www.youtube.com/embed/IsC2Qz7YGao","https://www.youtube.com/embed/obmg_0Rq8ow"]
@@ -18,7 +32,7 @@ info = """Estimation of forces and resultant motion is an important component of
 \t\t\t\t\t\t<li> Shows a much simpler, real-time capable model developed in MATLAB.</li>
 \t\t\t\t\t\t</ol>"""
 # \t\t\t\t\t\t<li> Compilation of funny and failed simulations, just for laughs.</li>
-datas[0].append([ttl, dt, lns, info])
+datas[-1].append([ttl, dt, lns, info])
 
 ttl = "Configurable Multi-body dynamics"
 dt = "CU-ICAR"
