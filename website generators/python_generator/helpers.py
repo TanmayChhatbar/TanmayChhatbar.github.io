@@ -132,8 +132,9 @@ end = f"""    </div>
             showActiveTooltip: true,
             slidesNavigation: true,
             controlArrows: false,
-            scrollingSpeed: 500,
+            scrollingSpeed: 250,
             dragAndMove: true,
+            lazyLoading: true,
         }})
     </script>
     <br />
@@ -151,9 +152,13 @@ def fullpage_div(div_i, data):
         title = slide[0]
         detail = slide[1]
         links = slide[2]
+        bg = slide[4]
         # add basic info
         st = f"""
             <div class="slide s{div_i}{i}">
+                <video class="bg-video" data-autoplay muted loop playsinline>
+                    <source src="media/{bg}" type="video/mp4" />
+                </video>
                 <h1>{title}</h1>
                 <h3>{detail}</h3>
 """
