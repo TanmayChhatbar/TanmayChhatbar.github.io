@@ -82,9 +82,9 @@ a:active {
 
 .bg-video {
     position: absolute;
-    height: 110%;
+    max-height: 110%;
+    max-width: 100%;
     right: 0;
-    bottom: 0;
     object-fit: cover;
     z-index: -1;
     object-position: right center;
