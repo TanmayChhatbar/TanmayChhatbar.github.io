@@ -82,7 +82,7 @@ fullpage_div_start = """    <div id="fullPage">
                 </p>
                 
                 <div>
-                    <h4><a href="resume_1024.pdf" class="btn-custom">My Résumé</a> 🔗</h4>
+                    <h4><a href="resume_0126.pdf" class="btn-custom">My Résumé</a> 🔗</h4>
                     <br>
                     <h4><a href="#auto_model" class="btn-custom">My projects</a> 🔗</h4>
                     <br>
