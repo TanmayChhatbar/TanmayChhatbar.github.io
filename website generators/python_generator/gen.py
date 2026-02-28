@@ -87,6 +87,13 @@ info = """As part of our capstone project for the course 'Automotive Electronics
 bg = "adas.mp4"
 datas[-1].append([ttl, dt, lns, info, bg])
 
+ttl = "DIY Sim-racing Wheel"
+dt = "Learning PCB Design"
+lns = ["https://www.youtube.com/embed/kYWhkko1ato?si=huBUV1N_IjzV8TW_"]
+info = """I wanted a round steering wheel. I wanted to learn PCB design. The round wheel became the reward.<br>Animation and render in blender"""
+bg = "steering-1080p-net.mp4"
+datas[-1].append([ttl, dt, lns, info, bg])
+
 ttl = "Motorcycle gear shifting automation"
 dt = "Capstone Project - Bachelor's in Mechanical Engineering"
 lns = ["https://www.youtube.com/embed/eVmGcuafOZo"]
