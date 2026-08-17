@@ -7,6 +7,23 @@ from helpers import *
 # fun section background
 
 # page 1 - Automomtive data and modelling
+ttl = "Vehicle Data logging"
+dt = "Log GPS, IMU, CAN, and much more"
+lns = ["https://www.youtube.com/embed/qLKWpdkve9A?si=VJ3Hot0MCEpfxEgo"]
+info = """With the goal of collecting data from a vehicle during track days and AutoX events, I designed and built a datalogger using an ESP32 microcontroller. <br>
+This project has taught me a lot about embedded systems, and the challenges of real-time data collection in a moving vehicle, including PCB design, sensor integration, FreeRTOS, the constraints posed by using microcontrollers in projects of this scale, and much more. <br><br>
+The logger supports the following:
+\t\t\t\t\t<ul class="feat">
+\t\t\t\t\t\t<li>GPS (10Hz)</li>
+\t\t\t\t\t\t<li>IMU (100Hz)</li>
+\t\t\t\t\t\t<li>CAN (500kbps)</li>
+\t\t\t\t\t\t<li>OBD requests over CAN</li>
+\t\t\t\t\t\t<li>Power and log from peripheral sensors</li>
+\t\t\t\t\t</ul>
+"""
+bg = "esp32-can_datalogger_fb.mp4"
+datas[0].append([ttl, dt, lns, info, bg])
+
 ttl = "Vehicle Dynamics and Control"
 dt = "Autonomous Drift Control"
 lns = ["https://www.youtube.com/embed/29gUpRrnJ5A?si=zav9KWwZAjjTpLzN"]
@@ -20,7 +37,7 @@ info = """An intermediate milestone to the goal of autonomous drift control in t
 \t\t\t\t\t\t<li>Optional visualization and joystick control using ROS2</li>
 \t\t\t\t\t</ul>"""
 bg = "IS300_drifting.mp4"
-datas[0].append([ttl, dt, lns, info, bg])
+datas[-1].append([ttl, dt, lns, info, bg])
 
 ttl = "Multi-wheeled vehicle modelling"
 dt = "Deep Orange 13-14 - Clemson University"
