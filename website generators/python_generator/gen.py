@@ -21,7 +21,7 @@ The logger supports the following:
 \t\t\t\t\t\t<li>Power and log from peripheral sensors</li>
 \t\t\t\t\t</ul>
 """
-bg = "esp32-can_datalogger_fb.mp4"
+bg = "datalogger-nomount-black.mp4"
 datas[0].append([ttl, dt, lns, info, bg])
 
 ttl = "Vehicle Dynamics and Control"
