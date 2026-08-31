@@ -231,13 +231,22 @@ lns = ["https://www.youtube.com/embed/3ymYBt0vYeg","https://www.youtube.com/embe
 bg = "loading.mp4"
 datas[-1].append([ttl, dt, lns, info, bg])
 
-# page 7 - last
+# page 7 - fun/motorsports/sports
 ttl = "What is fun, motivates you"
 dt = "What is love, baby"
-info = "Don't hurt me, don't hurt me, no more"
-lns = ["https://www.youtube.com/embed/WI3La0e9X_I?si=0w_R1Xm7GftYk6Tj","https://www.youtube.com/embed/L_vGYdL0Qy8","https://www.youtube.com/embed/rsrUuE2ELrc"]
-bg = "2jz_colored_s_better.mp4"
+info = "Don't hurt me, don't hurt me, no more!"
+lns = ["https://www.youtube.com/embed/rsrUuE2ELrc"]
+bg = "2jz_colored.mp4"
 datas.append([[ttl, dt, lns, info, bg]])
+
+# 
+ttl = "Four wheels are fun too"
+dt = "Car go vrooom"
+info = "Never gonna give you up!"
+lns = ["https://www.youtube.com/embed/WI3La0e9X_I?si=0w_R1Xm7GftYk6Tj","https://www.youtube.com/embed/L_vGYdL0Qy8"]
+bg = "2jz_colored.mp4"
+datas[-1].append([ttl, dt, lns, info, bg])
+
 
 # backup current html to new file
 with open('./index.html', 'r') as f, open('./index_backup.html', 'w') as b:
