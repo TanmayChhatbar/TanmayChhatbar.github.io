@@ -27,7 +27,7 @@ about_section = """<section class="about-section" id="top">
                     <h1 class="intro-title">Tanmay Chhatbar</h1>
                     <p class="intro-role">Doctoral Student at Clemson University (CU-ICAR)</p>
                     <div>
-                        <h4><a href="resume_0526.pdf" class="btn-custom">My R?sum?</a></h4>
+                        <h4><a href="resume_0526.pdf" class="btn-custom">My Resume</a></h4>
                         <h4><a href="#auto_model" class="btn-custom">My projects</a></h4>
                         <a href="mailto:tchhatb@clemson.edu" class="btn-custom">University e-mail</a>
                         <a href="mailto:tanmaychhatbar@gmail.com" class="btn-custom">Personal e-mail</a>
