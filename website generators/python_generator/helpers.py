@@ -1,195 +1,166 @@
-start = """<html>
-<head>
-    <title>
-        Projects - Tanmay Chhatbar
-    </title>
-    <meta charset="utf-8" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/main.css" type="text/css"/>
-    
-</head>
+from html import escape
+import re
+from urllib.parse import parse_qs, urlparse
 
-<body> 
+start = """<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projects by Tanmay Chhatbar, doctoral student at Clemson University CU-ICAR." />
+    <title>Projects - Tanmay Chhatbar</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+</head>
+<body>
+<div class="page">
 """
 
-#######################################################################################################
-
-anchors = """['about_me','auto_model','auto_robo','aero','electronics','3dmodel','automation','activity']"""
-ntt = """['About me','Automotive data & analysis','Automotive robotics','Aeromodelling','Electronics','3D Modelling and Animation','Automation','Activity']"""
-fullpage_div_start = """    <div id="fullPage">
-        <div class="section">
-            <div class="slide 01">
-                <title>Tanmay Chhatbar - About Me</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Hey! I'm Tanmay!
-    I love vehicles and technology!
-    Visit my webpage to know more!">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        type="text/css">
-
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-        type="text/css">
-    <style>
-        body {
-            position: absolute;
-            background: #000;
-            width: 100%;
-            height: 100%;
-        }
-        .btn-custom {
-            color: darkgray;
-            text-decoration: underline;
-            margin-left: 30;
-        }
-        .btn-custom:visited {
-            color: darkslategray;
-        }
-    </style>
-</head>
-<!-- choose between one of the two next lines for background image -->
-<div style="margin-left: 5%; margin-top: 2%; background-image: url('media/index_bg.png'); background-size: 50%; background-repeat: no-repeat; background-position: right top;">
-    <!-- <div style="margin-left: 5%;"> -->
-        <div class="col-md-12 text">
-            <div class="img mb-6 pt-5"><img class="rounded-circle" src="media/photo.jpeg" alt=""
-                    style="height:30vh;width:height;"></div>
-            <div class="desc pt-3" margin-left="100px">
-                <h3 class="subheading">Hello! I'm</h3>
-                <h1 class="mb-6">Tanmay Chhatbar</h1>
-                <br>
-
-                <p class="mb-7">
-                    Doctoral Student at Clemson University (CU-ICAR)
-                </p>
-                <br>
-                <hr color="white" width="50%" align="left"/>
-                <p class="mb-6">
-                    <script type="text/javascript">
-                        function getQueryVariable(variable) {
-                            var query = window.location.search.substring(1);
-                            var vars = query.split('&');
-                            for (var i = 0; i < vars.length; i++) {
-                                var pair = vars[i].split('=');
-                                if (decodeURIComponent(pair[0]) == variable) {
-                                    return decodeURIComponent(pair[1]);
-                                }
-                            }
-                        }
-                        var id = Number(getQueryVariable('id'))
-                        
-                    </script>
-                </p>
-                
-                <div>
-                    <h4><a href="resume_0526.pdf" class="btn-custom">My Résumé</a> 🔗</h4>
-                    <br>
-                    <h4><a href="#auto_model" class="btn-custom">My projects</a> 🔗</h4>
-                    <br>
-                    <hr color="white" width="75%" align="left"/>
-                    
-                    <a href = "mailto: tchhatb@clemson.edu" class="btn-custom">University e-mail ✉</a>
-                    <br><br>
-                    <a href = "mailto: tanmaychhatbar@gmail.com" class="btn-custom">Personal e-mail ✉</a>
+about_section = """<section class="about-section" id="top">
+    <div class="about-slide">
+        <div>
+            <div class="intro-content">
+                <div class="intro-portrait">
+                    <img src="media/photo.jpeg" alt="Portrait of Tanmay Chhatbar" />
                 </div>
-                <br><br><br>
+                <div class="intro-copy">
+                    <h3 class="subheading">Hello! I'm</h3>
+                    <h1 class="intro-title">Tanmay Chhatbar</h1>
+                    <p class="intro-role">Doctoral Student at Clemson University (CU-ICAR)</p>
+                    <div>
+                        <h4><a href="resume_0526.pdf" class="btn-custom">My R?sum?</a></h4>
+                        <h4><a href="#auto_model" class="btn-custom">My projects</a></h4>
+                        <a href="mailto:tchhatb@clemson.edu" class="btn-custom">University e-mail</a>
+                        <a href="mailto:tanmaychhatbar@gmail.com" class="btn-custom">Personal e-mail</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- JavaScript -->
-    <!--<script src="js/jquery-3.3.1.slim.min.js"></script>
-<script src="js/popper.min.js"></script>-->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-
-            </div>
-        </div>
+</section>
+<hr class="topic-divider" />
 """
 
-#######################################################################################################
-logo_size = 24
-accounts = f"""<ul id="infoMenu">
-        <li><a class="mylinks" href="index.html"><img src="media/logo_homepage.png" width=24px></a></li>
-        <li><a class="mylinks" href="https://linkedin.com/in/tanmaychhatbar" target="_blank"><img src="media/logo_linkedin.png" width=24px></a></li>
-        <li><a class="mylinks" href="https://github.com/TanmayChhatbar" target="_blank"><img src="media/logo_github_light.png" width=24px></a></li>
-        <li><a class="mylinks" href="https://grabcad.com/tanmay.chhatbar-1" target="_blank"><img src="media/logo_grabcad.png" width=24px></a></li>
-        <li><a class="mylinks" href="https://www.youtube.com/c/TanmayChhatbar/" target="_blank"><img src="media/logo_yt_tp.png" width=24px></a></li>
-        <li><a class="mylinks" href="https://www.printables.com/@tanmaychhatbar" target="_blank"><img src="media/logo_printables.jpg" width=24px></a></li>
-        <li><a class="mylinks" href="https://www.instagram.com/tanmaychhatbar/" target="_blank"><img src="media/logo_insta.png" width=24px></a></li>
+topic_metadata = [
+    ("auto_model", "Automotive data &amp; analysis"),
+    ("auto_robo", "Automotive robotics"),
+    ("aero", "Aeromodelling"),
+    ("electronics", "Electronics"),
+    ("3dmodel", "3D Modelling and Animation"),
+    ("automation", "Automation"),
+    ("activity", "Activity"),
+]
+
+accounts = """<ul id="infoMenu">
+        <li><a class="mylinks" href="index.html"><img src="media/logo_homepage.png" width="24" alt="Home" /></a></li>
+        <li><a class="mylinks" href="https://linkedin.com/in/tanmaychhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_linkedin.png" width="24" alt="LinkedIn" /></a></li>
+        <li><a class="mylinks" href="https://github.com/TanmayChhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_github_light.png" width="24" alt="GitHub" /></a></li>
+        <li><a class="mylinks" href="https://grabcad.com/tanmay.chhatbar-1" target="_blank" rel="noopener noreferrer"><img src="media/logo_grabcad.png" width="24" alt="GrabCAD" /></a></li>
+        <li><a class="mylinks" href="https://www.youtube.com/c/TanmayChhatbar/" target="_blank" rel="noopener noreferrer"><img src="media/logo_yt_tp.png" width="24" alt="YouTube" /></a></li>
+        <li><a class="mylinks" href="https://www.printables.com/@tanmaychhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_printables.jpg" width="24" alt="Printables" /></a></li>
+        <li><a class="mylinks" href="https://www.instagram.com/tanmaychhatbar/" target="_blank" rel="noopener noreferrer"><img src="media/logo_insta.png" width="24" alt="Instagram" /></a></li>
         <p style="text-align: right; padding-right: 2em; color: #418FDD"><b>Tanmay Chhatbar</b></p>
-    </ul>\n"""
-end = f"""    </div>
-    {accounts}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-    <script>
-        new fullpage('#fullPage', {{
-            autoScrolling: true,
-            navigation: true,
-            anchors: {anchors},
-            navigationTooltips: {ntt},
-            showActiveTooltip: true,
-            slidesNavigation: true,
-            controlArrows: false,
-            scrollingSpeed: 250,
-            dragAndMove: true,
-            lazyLoading: true,
-        }})
-    </script>
-    <br />
+    </ul>
+"""
+
+end = """</div>
 </body>
-</html>"""
-
-
-#######################################################################################################
-
-def fullpage_div(div_i, data):
-    # if len(data) > 1:
-    stt = """        <div class="section">"""
-    i = 1
-    for slide in data:
-        title = slide[0]
-        detail = slide[1]
-        links = slide[2]
-        bg = slide[4]
-        # add basic info
-        st = f"""
-            <div class="slide s{div_i}{i}">
-                <video class="bg-video" data-autoplay muted loop playsinline>
-                    <source src="media/{bg}" type="video/mp4" />
-                </video>
-                <h1>{title}</h1>
-                <h3>{detail}</h3>
-"""
-        # add text information
-        if len(slide) > 3 and slide[3] != "":
-            info = slide[3]
-            st = st + f"""                <p class="info">\n                    {info}\n                </p>
-"""
-        # add youtube links
-        if len(links) > 0:
-            st = st + """                </br>
-                <p>
-"""
-        for link in links:
-            if link == "":
-                link = "comingsoon.html"
-            st = st + f"""                    <iframe src="{link}"></iframe>
-"""     
-        if len(links) > 0:
-            st = st + """                </p>
+</html>
 """
 
-        # end section division
-        st = st + """            </div>"""
 
-        stt = stt + st
-        i = i + 1
-    stt = stt + """
-        </div>
+def youtube_video_id(url):
+    if not url:
+        return None
+    parsed = urlparse(url)
+    host = parsed.netloc.lower().split(":")[0]
+    video_id = None
+    if host.endswith("youtu.be"):
+        video_id = parsed.path.strip("/").split("/")[0]
+    elif host.endswith("youtube.com") or host.endswith("youtube-nocookie.com"):
+        if parsed.path.startswith("/embed/"):
+            video_id = parsed.path.split("/", 2)[2].split("/")[0]
+        elif parsed.path == "/watch":
+            video_id = parse_qs(parsed.query).get("v", [None])[0]
+    if video_id and re.fullmatch(r"[A-Za-z0-9_-]+", video_id):
+        return video_id
+    return None
+
+
+def project_card(slide):
+    title, detail, links = slide[:3]
+    info = slide[3] if len(slide) > 3 else ""
+    background = slide[4] if len(slide) > 4 else ""
+    info = "\n".join(line.rstrip() for line in info.splitlines()).strip()
+    plain_title = escape(re.sub(r"<[^>]+>", "", title))
+    background = escape(str(background), quote=True)
+
+    video = ""
+    if background:
+        video = f"""<video class="bg-video" autoplay muted loop playsinline aria-hidden="true" tabindex="-1">
+                        <source src="media/{background}" type="video/mp4" />
+                    </video>"""
+
+    video_items = []
+    preview_id = None
+    for index, link in enumerate(links or []):
+        if not link:
+            continue
+        video_id = youtube_video_id(link)
+        if video_id:
+            if preview_id is None:
+                preview_id = video_id
+            video_url = f"https://www.youtube.com/watch?v={video_id}"
+            thumbnail_url = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+            video_items.append(
+                f"""<a class="project-video-link" href="{video_url}" target="_blank" rel="noopener noreferrer" aria-label="Watch {plain_title} video {index + 1} on YouTube">
+                            <img src="{thumbnail_url}" alt="YouTube thumbnail for {plain_title}" loading="lazy" />
+                        </a>"""
+            )
+        elif link != "comingsoon.html":
+            safe_url = escape(link, quote=True)
+            video_items.append(
+                f"<a class=\"project-video-link project-video-text\" href=\"{safe_url}\" target=\"_blank\" rel=\"noopener noreferrer\">Open project video</a>"
+            )
+
+    preview_thumbnail = ""
+    if preview_id:
+        thumbnail_url = f"https://img.youtube.com/vi/{preview_id}/hqdefault.jpg"
+        preview_thumbnail = f"<img class=\"preview-thumbnail\" src=\"{thumbnail_url}\" alt=\"YouTube thumbnail for {plain_title}\" loading=\"lazy\" />"
+
+    info_html = f"<div class=\"info\">{info}</div>" if info else ""
+    links_html = ""
+    if video_items:
+        links_html = "<div class=\"project-video-links\">" + "".join(video_items) + "</div>"
+
+    card_html = f"""            <details class="project-card">
+                <summary class="card-preview">
+                    {video}
+                    <div class="preview-copy">
+                        <h1>{title}</h1>
+                        <h3>{detail}</h3>
+                    </div>
+                    {preview_thumbnail}
+                </summary>
+                <div class="project-details">
+                    {info_html}
+                    {links_html}
+                </div>
+            </details>
 """
-    return stt
+    return "\n".join(line.rstrip() for line in card_html.splitlines()) + "\n"
 
-#######################################################################################################
 
-datas = list()
-datas.append(list())
+def topic_section(topic_index, data):
+    if topic_index >= len(topic_metadata):
+        anchor, title = f"topic-{topic_index + 1}", f"Topic {topic_index + 1}"
+    else:
+        anchor, title = topic_metadata[topic_index]
+    cards = "".join(project_card(slide) for slide in data)
+    section = f"""<section class="topic" id="{anchor}">
+    <h2>{title}</h2>
+    <div class="project-grid">
+{cards}    </div>
+</section>
+<hr class="topic-divider" />
+"""
+    return section

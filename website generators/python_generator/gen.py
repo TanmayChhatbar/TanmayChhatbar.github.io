@@ -1,5 +1,7 @@
 from helpers import *
 
+datas = [[]]
+
 #TODO
 # videos
 #   FT Edge video
@@ -249,15 +251,16 @@ datas[-1].append([ttl, dt, lns, info, bg])
 
 
 # backup current html to new file
-with open('./index.html', 'r') as f, open('./index_backup.html', 'w') as b:
+with open('./index.html', 'r', encoding='utf-8') as f, open('./index_backup.html', 'w', encoding='utf-8') as b:
     b.write(f.read())
 
 # generate new
 with open('./index.html','w', encoding="utf-8") as f:
     f.write(start)
-    f.write(fullpage_div_start)
-    i = 1
-    for data in datas:
-        f.write(fullpage_div(i, data))
-        i = i + 1
+    f.write(about_section)
+    if len(datas) != len(topic_metadata):
+        raise ValueError("Every project topic needs a matching anchor and title in helpers.py")
+    for i, data in enumerate(datas):
+        f.write(topic_section(i, data))
+    f.write(accounts)
     f.write(end)
