@@ -86,8 +86,6 @@ fullpage_div_start = """    <div id="fullPage">
                     <br>
                     <h4><a href="#auto_model" class="btn-custom">My projects</a> 🔗</h4>
                     <br>
-                    <h4><a href="/blog_gen.html" class="btn-custom">My blog</a> 🔗</h4>
-                    <br>
                     <hr color="white" width="75%" align="left"/>
                     
                     <a href = "mailto: tchhatb@clemson.edu" class="btn-custom">University e-mail ✉</a>
