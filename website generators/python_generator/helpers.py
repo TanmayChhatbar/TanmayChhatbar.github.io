@@ -54,12 +54,6 @@ topic_metadata = [
     ("activity", "Activity"),
 ]
 
-accounts = """<ul id="infoMenu">
-        <li><a class="mylinks" href="index.html"><img src="media/logo_homepage.png" width="24" alt="Home" /></a></li>
-        <p style="text-align: right; padding-right: 2em; color: #418FDD"><b>Tanmay Chhatbar</b></p>
-    </ul>
-"""
-
 end = """</body>
 </html>
 """

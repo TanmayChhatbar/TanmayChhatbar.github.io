@@ -263,5 +263,4 @@ with open('./index.html','w', encoding="utf-8") as f:
         raise ValueError("Every project topic needs a matching anchor and title in helpers.py")
     for i, data in enumerate(datas):
         f.write(topic_section(i, data))
-    f.write(accounts)
     f.write(end)
