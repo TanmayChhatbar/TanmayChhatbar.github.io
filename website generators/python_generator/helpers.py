@@ -12,27 +12,31 @@ start = """<!doctype html>
     <link rel="stylesheet" href="./css/main.css" type="text/css" />
 </head>
 <body>
-<div class="page">
 """
 
-about_section = """<section class="about-section" id="top">
-    <div class="about-slide">
-        <div>
-            <div class="intro-content">
-                <div class="intro-portrait">
-                    <img src="media/photo.jpeg" alt="Portrait of Tanmay Chhatbar" />
+about_section = """<section class="intro" id="top">
+    <div class="intro-content">
+        <img src="media/photo.jpeg" alt="Portrait of Tanmay Chhatbar" />
+        <div class="intro-copy">
+            <h3>Hello! I'm</h3>
+            <h1>Tanmay Chhatbar</h1>
+            <p>Doctoral Student at Clemson University (CU-ICAR)</p>
+            <div class="intro-actions">
+                <div class="intro-button-row">
+                    <a href="resume_0526.pdf" class="btn-custom resume-btn">My Resume</a>
                 </div>
-                <div class="intro-copy">
-                    <h3 class="subheading">Hello! I'm</h3>
-                    <h1 class="intro-title">Tanmay Chhatbar</h1>
-                    <p class="intro-role">Doctoral Student at Clemson University (CU-ICAR)</p>
-                    <div>
-                        <h4><a href="resume_0526.pdf" class="btn-custom">My Resume</a></h4>
-                        <h4><a href="#auto_model" class="btn-custom">My projects</a></h4>
-                        <a href="mailto:tchhatb@clemson.edu" class="btn-custom">University e-mail</a>
-                        <a href="mailto:tanmaychhatbar@gmail.com" class="btn-custom">Personal e-mail</a>
-                    </div>
+                <div class="intro-button-row">
+                    <a href="mailto:tchhatb@clemson.edu" class="btn-custom email-btn">University e-mail</a>
+                    <a href="mailto:tanmaychhatbar@gmail.com" class="btn-custom email-btn">Personal e-mail</a>
                 </div>
+                <ul class="intro-social-links" aria-label="Social media links">
+                    <li><a class="mylinks" href="https://linkedin.com/in/tanmaychhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_linkedin.png" width="24" alt="LinkedIn" /></a></li>
+                    <li><a class="mylinks" href="https://github.com/TanmayChhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_github_light.png" width="24" alt="GitHub" /></a></li>
+                    <li><a class="mylinks" href="https://grabcad.com/tanmay.chhatbar-1" target="_blank" rel="noopener noreferrer"><img src="media/logo_grabcad.png" width="24" alt="GrabCAD" /></a></li>
+                    <li><a class="mylinks" href="https://www.youtube.com/c/TanmayChhatbar/" target="_blank" rel="noopener noreferrer"><img src="media/logo_yt_tp.png" width="24" alt="YouTube" /></a></li>
+                    <li><a class="mylinks" href="https://www.printables.com/@tanmaychhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_printables.jpg" width="24" alt="Printables" /></a></li>
+                    <li><a class="mylinks" href="https://www.instagram.com/tanmaychhatbar/" target="_blank" rel="noopener noreferrer"><img src="media/logo_insta.png" width="24" alt="Instagram" /></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -52,18 +56,11 @@ topic_metadata = [
 
 accounts = """<ul id="infoMenu">
         <li><a class="mylinks" href="index.html"><img src="media/logo_homepage.png" width="24" alt="Home" /></a></li>
-        <li><a class="mylinks" href="https://linkedin.com/in/tanmaychhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_linkedin.png" width="24" alt="LinkedIn" /></a></li>
-        <li><a class="mylinks" href="https://github.com/TanmayChhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_github_light.png" width="24" alt="GitHub" /></a></li>
-        <li><a class="mylinks" href="https://grabcad.com/tanmay.chhatbar-1" target="_blank" rel="noopener noreferrer"><img src="media/logo_grabcad.png" width="24" alt="GrabCAD" /></a></li>
-        <li><a class="mylinks" href="https://www.youtube.com/c/TanmayChhatbar/" target="_blank" rel="noopener noreferrer"><img src="media/logo_yt_tp.png" width="24" alt="YouTube" /></a></li>
-        <li><a class="mylinks" href="https://www.printables.com/@tanmaychhatbar" target="_blank" rel="noopener noreferrer"><img src="media/logo_printables.jpg" width="24" alt="Printables" /></a></li>
-        <li><a class="mylinks" href="https://www.instagram.com/tanmaychhatbar/" target="_blank" rel="noopener noreferrer"><img src="media/logo_insta.png" width="24" alt="Instagram" /></a></li>
         <p style="text-align: right; padding-right: 2em; color: #418FDD"><b>Tanmay Chhatbar</b></p>
     </ul>
 """
 
-end = """</div>
-</body>
+end = """</body>
 </html>
 """
 
@@ -87,9 +84,7 @@ def youtube_video_id(url):
 
 
 def project_card(slide):
-    title, detail, links = slide[:3]
-    info = slide[3] if len(slide) > 3 else ""
-    background = slide[4] if len(slide) > 4 else ""
+    title, detail, links, info, background = slide[:5]
     info = "\n".join(line.rstrip() for line in info.splitlines()).strip()
     plain_title = escape(re.sub(r"<[^>]+>", "", title))
     background = escape(str(background), quote=True)
