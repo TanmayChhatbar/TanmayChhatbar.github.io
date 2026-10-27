@@ -20,6 +20,7 @@ The logger supports the following:
 \t\t\t\t\t\t<li>IMU (100Hz)</li>
 \t\t\t\t\t\t<li>CAN (500kbps)</li>
 \t\t\t\t\t\t<li>OBD requests over CAN</li>
+\t\t\t\t\t\t<li>TPMS (BLE)</li>
 \t\t\t\t\t\t<li>Power and log from peripheral sensors</li>
 \t\t\t\t\t</ul>
 """

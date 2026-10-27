@@ -7,7 +7,7 @@ start = """<!doctype html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Projects by Tanmay Chhatbar, doctoral student at Clemson University CU-ICAR." />
+    <meta name="description" content="Projects by Tanmay Chhatbar, Doctoral Candidate at Clemson University CU-ICAR." />
     <title>Projects - Tanmay Chhatbar</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css" />
 </head>
@@ -20,7 +20,7 @@ about_section = """<section class="intro" id="top">
         <div class="intro-copy">
             <h3>Hello! I'm</h3>
             <h1>Tanmay Chhatbar</h1>
-            <p>Doctoral Student at Clemson University (CU-ICAR)</p>
+            <p>Doctoral Candidate at Clemson University (CU-ICAR)</p>
             <div class="intro-actions">
                 <div class="intro-button-row">
                     <a href="resume_0526.pdf" class="btn-custom resume-btn">My Resume</a>
@@ -121,6 +121,8 @@ def project_card(slide):
     if preview_id:
         thumbnail_url = f"https://img.youtube.com/vi/{preview_id}/hqdefault.jpg"
         preview_thumbnail = f"<img class=\"preview-thumbnail\" src=\"{thumbnail_url}\" alt=\"YouTube thumbnail for {plain_title}\" loading=\"lazy\" />"
+    elif not video_items:
+        preview_thumbnail = '<div class="preview-thumbnail preview-placeholder">Coming soon</div>'
 
     info_html = f"<div class=\"info\">{info}</div>" if info else ""
     links_html = ""

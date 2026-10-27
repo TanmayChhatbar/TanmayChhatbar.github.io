@@ -118,7 +118,7 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 14px;
-  margin: 0;
+  margin: 16px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -140,14 +140,14 @@ a:hover {
   padding: 0 24px;
 }
 .topic-divider {
-  max-width: 1180px;
+  max-width: 800px;
   margin: 32px auto;
   border: 0;
-  border-top: 1px solid #454545;
+  border-top: 4px solid #888;
 }
 .topic > h2 {
   margin: 0 0 16px;
-  color: #418fdd;
+  color: #f56600;
   font-size: 1.8rem;
 }
 .project-grid {
@@ -229,6 +229,7 @@ a:hover {
 .card-preview h3 {
   margin: 0;
   color: grey;
+  font-weight: normal;
 }
 .preview-thumbnail {
   display: block;
@@ -237,6 +238,15 @@ a:hover {
   border: 2px solid #418fdd;
   border-radius: 6px;
   object-fit: cover;
+}
+.preview-placeholder {
+  display: grid;
+  padding: 0 10px;
+  background: #101923;
+  color: #aab7c5;
+  font-weight: 700;
+  text-align: center;
+  place-items: center;
 }
 .card-preview::after {
   position: absolute;
